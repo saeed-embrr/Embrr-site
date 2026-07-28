@@ -55,9 +55,9 @@
         }
 
         nav a.logo img {
-            width: 48px;
             height: 48px;
-            border-radius: 8px;
+            width: auto;
+            border-radius: 4px;
             filter: drop-shadow(0 0 8px rgba(255,255,255,0.3));
         }
 
@@ -952,11 +952,7 @@
     </style>
 </head>
 <body>
-                <h2 class="modal-title">Under Construction</h2>
-                <p class="modal-text">
-                    Embrr is still being built and refined. We are working hard to bring you the ultimate nightlife experience.
-                </p>
-                    <!-- Ambient Orbs -->
+    <!-- Ambient Orbs -->
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
     <div class="orb orb-3"></div>
@@ -1087,9 +1083,6 @@
                     <h2>Stop wasting money on the wrong night.</h2>
                     <p>Embrr shows you the real pulse of your city's nightlife — live, crowd-sourced, and honest — so you can spend your night exactly where you belong. And when the night's over, Embrr makes sure everyone gets home safe.</p>
                 </div>
-                <div>
-                    <!-- Placeholder for visual -->
-                </div>
             </div>
         </div>
     </section>
@@ -1141,7 +1134,7 @@
         </div>
     </section>
 
-    
+
     <!-- App Preview Section -->
     <section id="preview" style="position:relative;z-index:10;padding:80px 24px;border-top:1px solid rgba(255,255,255,0.1);">
         <div class="container">
@@ -1233,7 +1226,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <img src="https://raw.githubusercontent.com/saeed-embrr/Embrr-site/main/Embrr.logo.png" alt="Embrr" style="width: 40px; height: 40px; margin-bottom: 16px;">
+                    <img src="https://raw.githubusercontent.com/saeed-embrr/Embrr-site/main/Embrr.logo.png" alt="Embrr" style="height: 40px; width: auto; margin-bottom: 16px;">
                     <p style="font-size: 14px; color: #a0a0a0;">Go out smarter. Connect deeper. Get home safe.</p>
                 </div>
             </div>
@@ -1276,7 +1269,7 @@
             if (orb2) orb2.style.transform = `translateY(${-scrollY * 0.1}px)`;
         }, { passive: true });
 
-        // Waitlist form — replace with your Google Apps Script URL
+        // Waitlist form
         const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
         function submitWaitlist(e) {
             e.preventDefault();
